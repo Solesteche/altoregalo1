@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>ALTO REGALO - CARRITO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style_carrito.css">
+   <link rel="stylesheet" href="./altoregalo.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-encabezado">
+
+            <div class="logo">
+                <h1>ALTO<span>R</span>EGALO</h1>
+            </div>
+
+            <div class="container-user">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+
+        <div class="container-nav">
+
+            <form class="search-form">
+                <input type="search" placeholder="Masajes, cenas..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+
+            <button id="abrir" class="abrir"><i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <nav id="nav" class="nav">
+                
+                <ul class="nav_list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./index.html#comofunciona">¿Cómo funciona?</a></li>
+                    <li><a href="index.html#destacados">Destacados</a></li>
+                    <li><a href="./index.html#descuentos">Descuentos</a></li>
+                    <li><a href="./index.html#nosotros">Nosotros</a></li>
+                </ul>
+                <button id="cerrar" class="cerrar"><i class="bi bi-x-lg"></i></button>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+   
+
+
+
+    <section class="contenedor">
+
+        <!-- TARJETAS -->
+        <div class="contenedor-items" id="contenedor-items">
+        </div>
+        <!-- ------------- -->
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <!-- CARGA DE CARRITO -->
+            <div class="carrito-items">
+            </div>
+            <!-- -------- -->
+
+            <!-- TOTAL A PAGAR -->
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total" id="carrito-precio-total">
+                        $0,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+            <!-- --------------------------- -->
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-row">
+
+            <div class="footer-links">
+              
+                <h4>Alto <span>R</span>egalo</h4>
+
+                <p>Nacimos para cumplir tus sueños <br> y hacer posibles todas <br>
+                    <span>las aventuras que imaginaste.</span>
+                </p>
+
+            </div>
+
+                <div class="footer-links">
+                    <h4>Canales de atención</h4>
+                    <ul>
+                    <li> <a href="#"><span><i class="fa-solid fa-headset"></i></span>0800-000-0000</a> </li>
+                    <li> <a href="#">Todos los dias</a></li>
+                    </ul>
+            
+               </div>
+                  
+
+            <div class="footer-links">
+                <h4>Ayuda</h4>
+                <ul>
+                    
+                    <li> <a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                    <li> <a href="#descuentos">Newsletter</a></li>
+                   
+                </ul>
+           </div>
+
+            <div class="footer-links">
+                <h4>Mi cuenta</h4>
+                <ul>
+                    <li> <a href="#destacados">Mis perfil</a></li>
+                    <li> <a href="#destacados">Mis experiencias</a></li>
+                    <li> <a href="#destacados">Pasaporte Alto Regalo</a></li>
+                    <li> <a href="#destacados">Cátalogo canje productos</a></li>
+                    
+                    
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Seguinos</h4>
+                <div class="social-link">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+                        target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/login/es" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <br>
+                <p class="footer-name">Copyright © 2023 <strong>Alto Regalo</strong> All rights reserved</p>
+            </div>
+
+        </div>
+
+    </div> 
+
+    
+
+
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="listar_Api.js" async></script>  -->
+    <script src="./js/scrip_carrito.js" async></script>
+    <script src="./js/altoregalo.js"></script>
+</body>
+
+</html>
